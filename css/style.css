@@ -367,3 +367,15 @@ body {
         font-size: 18px;
     }
 }
+
+/* Страница: Регистрация */
+
+.form--register {
+    max-width: 520px;
+}
+
+@media (max-width: 480px) {
+    .form--register {
+        padding: 20px;
+    }
+}
