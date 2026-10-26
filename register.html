@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Гаечный Ключ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">Гаечный Ключ</a>
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Главная</a>
+            <a class="header__link header__link--active" href="register.html">Регистрация</a>
+            <a class="header__link" href="login.html">Вход</a>
+            <a class="header__link" href="orders.html">Мои заявки</a>
+            <a class="header__link" href="create.html">Новая заявка</a>
+            <a class="header__link" href="admin.html">Администратор</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="page-title">Регистрация</h1>
+
+        <form class="form form--register" method="post" action="">
+            <div class="form__group">
+                <label class="form__label" for="fullname">ФИО</label>
+                <input class="form__input" type="text" id="fullname" name="fullname"
+                       placeholder="Иванов Иван Иванович" pattern="[А-Яа-яЁё ]+" required>
+                <span class="form__hint">Только русские буквы и пробелы</span>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="login">Логин</label>
+                <input class="form__input" type="text" id="login" name="login"
+                       placeholder="ivanov77" minlength="6" pattern="[A-Za-z0-9]+" required>
+                <span class="form__error">Этот логин уже занят</span>
+                <span class="form__hint">Латинские буквы и цифры, не короче 6 символов</span>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="password">Пароль</label>
+                <input class="form__input" type="password" id="password" name="password"
+                       placeholder="Не короче 6 символов" minlength="6" required>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="phone">Телефон</label>
+                <input class="form__input" type="tel" id="phone" name="phone"
+                       placeholder="+7(999)-123-45-67" pattern="\+7\(\d{3}\)-\d{3}-\d{2}-\d{2}" required>
+                <span class="form__hint">Формат: +7(XXX)-XXX-XX-XX</span>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" name="email"
+                       placeholder="name@mail.ru" required>
+            </div>
+
+            <button class="button button--wide" type="submit">Зарегистрироваться</button>
+
+            <p class="form__link">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__name">Гаечный Ключ</p>
+        <p class="footer__text">Телефон: +7(495)-555-01-23 · Почта: info@gaechny-klyuch.ru</p>
+        <p class="footer__year">© 2026 Гаечный Ключ</p>
+    </footer>
+</body>
+</html>
