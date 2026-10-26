@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | Гаечный Ключ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">Гаечный Ключ</a>
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Главная</a>
+            <a class="header__link" href="register.html">Регистрация</a>
+            <a class="header__link header__link--active" href="login.html">Вход</a>
+            <a class="header__link" href="orders.html">Мои заявки</a>
+            <a class="header__link" href="create.html">Новая заявка</a>
+            <a class="header__link" href="admin.html">Администратор</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="page-title">Вход</h1>
+
+        <div class="login">
+            <p class="form__error login__alert">Неверный логин или пароль</p>
+
+            <form class="form" method="post" action="">
+                <div class="form__group">
+                    <label class="form__label" for="login">Логин</label>
+                    <input class="form__input" type="text" id="login" name="login"
+                           placeholder="ivanov77" required>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="password">Пароль</label>
+                    <input class="form__input" type="password" id="password" name="password"
+                           placeholder="Введите пароль" required>
+                </div>
+
+                <button class="button button--wide" type="submit">Войти</button>
+
+                <p class="form__link">Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__name">Гаечный Ключ</p>
+        <p class="footer__text">Телефон: +7(495)-555-01-23 · Почта: info@gaechny-klyuch.ru</p>
+        <p class="footer__year">© 2026 Гаечный Ключ</p>
+    </footer>
+</body>
+</html>

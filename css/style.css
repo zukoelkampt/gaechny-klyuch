@@ -379,3 +379,24 @@ body {
         padding: 20px;
     }
 }
+
+/* Страница: Вход */
+
+.login {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.login__alert {
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    background-color: #fef2f2;
+    border-left: 4px solid #dc2626;
+    border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+    .login .form {
+        padding: 20px;
+    }
+}
