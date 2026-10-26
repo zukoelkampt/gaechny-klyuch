@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка | Гаечный Ключ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">Гаечный Ключ</a>
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Главная</a>
+            <a class="header__link" href="register.html">Регистрация</a>
+            <a class="header__link" href="login.html">Вход</a>
+            <a class="header__link" href="orders.html">Мои заявки</a>
+            <a class="header__link header__link--active" href="create.html">Новая заявка</a>
+            <a class="header__link" href="admin.html">Администратор</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="page-title">Новая заявка</h1>
+
+        <form class="form form--create" method="post" action="">
+            <div class="form__group">
+                <label class="form__label" for="car">Марка и модель автомобиля</label>
+                <input class="form__input" type="text" id="car" name="car"
+                       placeholder="Toyota Camry" required>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="year">Год выпуска</label>
+                <input class="form__input" type="number" id="year" name="year"
+                       placeholder="2018" min="1990" max="2026" required>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="service">Услуга</label>
+                <select class="form__select" id="service" name="service" required>
+                    <option value="" disabled selected>Выберите услугу</option>
+                    <option value="diagnostics">Диагностика</option>
+                    <option value="oil">Замена масла</option>
+                    <option value="tire">Шиномонтаж</option>
+                    <option value="suspension">Ремонт ходовой</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="date">Дата визита</label>
+                <input class="form__input" type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="time">Время визита</label>
+                <input class="form__input" type="time" id="time" name="time" required>
+            </div>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Срочность</legend>
+                <div class="form__options">
+                    <div class="form__option">
+                        <input type="radio" id="urgency-normal" name="urgency" value="normal" checked>
+                        <label for="urgency-normal">Обычная</label>
+                    </div>
+                    <div class="form__option">
+                        <input type="radio" id="urgency-urgent" name="urgency" value="urgent">
+                        <label for="urgency-urgent">Срочная</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form__group">
+                <label class="form__label" for="comment">Комментарий</label>
+                <textarea class="form__textarea" id="comment" name="comment"
+                          placeholder="Опишите, что беспокоит в автомобиле"></textarea>
+            </div>
+
+            <button class="button button--wide" type="submit">Отправить заявку</button>
+
+            <p class="form__link"><a href="orders.html">Назад к моим заявкам</a></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__name">Гаечный Ключ</p>
+        <p class="footer__text">Телефон: +7(495)-555-01-23 · Почта: info@gaechny-klyuch.ru</p>
+        <p class="footer__year">© 2026 Гаечный Ключ</p>
+    </footer>
+</body>
+</html>

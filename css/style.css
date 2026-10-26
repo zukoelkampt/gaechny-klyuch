@@ -481,3 +481,47 @@ body {
 .review .button {
     align-self: flex-start;
 }
+
+/* Страница: Новая заявка */
+
+.form--create {
+    max-width: 560px;
+}
+
+.form__fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form__legend {
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--color-main);
+    margin-bottom: 6px;
+}
+
+.form__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form__option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form__option input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-accent);
+}
+
+@media (max-width: 480px) {
+    .form--create {
+        padding: 20px;
+    }
+}
