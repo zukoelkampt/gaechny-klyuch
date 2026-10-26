@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Администратор | Гаечный Ключ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">Гаечный Ключ</a>
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Главная</a>
+            <a class="header__link" href="register.html">Регистрация</a>
+            <a class="header__link" href="login.html">Вход</a>
+            <a class="header__link" href="orders.html">Мои заявки</a>
+            <a class="header__link" href="create.html">Новая заявка</a>
+            <a class="header__link header__link--active" href="admin.html">Администратор</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="page-title">Все заявки</h1>
+
+        <div class="table-wrap">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>ФИО клиента</th>
+                        <th>Телефон</th>
+                        <th>Автомобиль</th>
+                        <th>Год</th>
+                        <th>Услуга</th>
+                        <th>Дата</th>
+                        <th>Время</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1001</td><td>Иван Иванов</td><td>+7(903)-111-22-33</td><td>Toyota Camry</td><td>2018</td><td>Замена масла</td><td>28.10.2026</td><td>10:00</td>
+                        <td><span class="status status--new">Новая</span></td>
+                    </tr>
+                    <tr>
+                        <td>1002</td><td>Петр Смирнов</td><td>+7(916)-222-33-44</td><td>Kia Rio</td><td>2016</td><td>Диагностика</td><td>27.10.2026</td><td>12:30</td>
+                        <td><span class="status status--work">В работе</span></td>
+                    </tr>
+                    <tr>
+                        <td>1003</td><td>Ольга Кузнецова</td><td>+7(925)-333-44-55</td><td>Hyundai Solaris</td><td>2019</td><td>Шиномонтаж</td><td>20.10.2026</td><td>09:00</td>
+                        <td><span class="status status--done">Готово</span></td>
+                    </tr>
+                    <tr>
+                        <td>1004</td><td>Андрей Попов</td><td>+7(985)-444-55-66</td><td>Lada Vesta</td><td>2021</td><td>Ремонт ходовой</td><td>18.10.2026</td><td>14:00</td>
+                        <td><span class="status status--cancel">Отменена</span></td>
+                    </tr>
+                    <tr>
+                        <td>1005</td><td>Мария Соколова</td><td>+7(999)-555-66-77</td><td>Skoda Octavia</td><td>2017</td><td>Замена масла</td><td>31.10.2026</td><td>11:00</td>
+                        <td><span class="status status--new">Новая</span></td>
+                    </tr>
+                    <tr>
+                        <td>1006</td><td>Дмитрий Волков</td><td>+7(903)-666-77-88</td><td>Renault Logan</td><td>2015</td><td>Диагностика</td><td>31.10.2026</td><td>16:00</td>
+                        <td><span class="status status--work">В работе</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__name">Гаечный Ключ</p>
+        <p class="footer__text">Телефон: +7(495)-555-01-23 · Почта: info@gaechny-klyuch.ru</p>
+        <p class="footer__year">© 2026 Гаечный Ключ</p>
+    </footer>
+</body>
+</html>
