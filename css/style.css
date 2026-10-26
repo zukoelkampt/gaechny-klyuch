@@ -400,3 +400,74 @@ body {
         padding: 20px;
     }
 }
+
+/* Страница: Мои заявки */
+
+.orders__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.orders__header .page-title {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.orders__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.order-card {
+    flex: 1 1 340px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.order-card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.order-card__number {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-main);
+}
+
+.order-card__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 15px;
+}
+
+.order-card__cancel {
+    padding: 10px 12px;
+    background-color: #fef2f2;
+    border-left: 4px solid #dc2626;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #991b1b;
+}
+
+@media (max-width: 480px) {
+    .order-card {
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+}

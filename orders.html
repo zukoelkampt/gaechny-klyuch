@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои заявки | Гаечный Ключ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">Гаечный Ключ</a>
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Главная</a>
+            <a class="header__link" href="register.html">Регистрация</a>
+            <a class="header__link" href="login.html">Вход</a>
+            <a class="header__link header__link--active" href="orders.html">Мои заявки</a>
+            <a class="header__link" href="create.html">Новая заявка</a>
+            <a class="header__link" href="admin.html">Администратор</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="orders__header">
+            <h1 class="page-title">Мои заявки</h1>
+            <a class="button" href="create.html">Новая заявка</a>
+        </div>
+
+        <div class="orders__list">
+            <article class="order-card">
+                <div class="order-card__top">
+                    <span class="order-card__number">Заявка №1024</span>
+                    <span class="status status--new">Новая</span>
+                </div>
+                <ul class="order-card__list">
+                    <li>Автомобиль: Toyota Camry, 2018</li>
+                    <li>Услуга: Замена масла</li>
+                    <li>Дата: 28.10.2026</li>
+                    <li>Время: 10:00</li>
+                    <li>Срочность: обычная</li>
+                    <li>Комментарий: нужно заменить масло и фильтр</li>
+                </ul>
+            </article>
+
+            <article class="order-card">
+                <div class="order-card__top">
+                    <span class="order-card__number">Заявка №1023</span>
+                    <span class="status status--work">В работе</span>
+                </div>
+                <ul class="order-card__list">
+                    <li>Автомобиль: Kia Rio, 2016</li>
+                    <li>Услуга: Диагностика</li>
+                    <li>Дата: 27.10.2026</li>
+                    <li>Время: 12:30</li>
+                    <li>Срочность: срочная</li>
+                    <li>Комментарий: стучит подвеска</li>
+                </ul>
+            </article>
+
+            <article class="order-card">
+                <div class="order-card__top">
+                    <span class="order-card__number">Заявка №1022</span>
+                    <span class="status status--done">Готово</span>
+                </div>
+                <ul class="order-card__list">
+                    <li>Автомобиль: Hyundai Solaris, 2019</li>
+                    <li>Услуга: Шиномонтаж</li>
+                    <li>Дата: 20.10.2026</li>
+                    <li>Время: 09:00</li>
+                    <li>Срочность: обычная</li>
+                    <li>Комментарий: сезонная замена резины</li>
+                </ul>
+            </article>
+
+            <article class="order-card">
+                <div class="order-card__top">
+                    <span class="order-card__number">Заявка №1021</span>
+                    <span class="status status--cancel">Отменена</span>
+                </div>
+                <ul class="order-card__list">
+                    <li>Автомобиль: Lada Vesta, 2021</li>
+                    <li>Услуга: Ремонт ходовой</li>
+                    <li>Дата: 18.10.2026</li>
+                    <li>Время: 14:00</li>
+                    <li>Срочность: обычная</li>
+                    <li>Комментарий: замена амортизаторов</li>
+                </ul>
+                <p class="order-card__cancel">Причина отмены: клиент перенёс ремонт на другой срок</p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__name">Гаечный Ключ</p>
+        <p class="footer__text">Телефон: +7(495)-555-01-23 · Почта: info@gaechny-klyuch.ru</p>
+        <p class="footer__year">© 2026 Гаечный Ключ</p>
+    </footer>
+</body>
+</html>
