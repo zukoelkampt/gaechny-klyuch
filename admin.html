@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Администратор | Гаечный Ключ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header">
         <a class="header__logo" href="index.html">Гаечный Ключ</a>
@@ -22,6 +24,19 @@
     <main class="main">
         <h1 class="page-title">Все заявки</h1>
 
+        <form class="admin-filter" method="get" action="">
+            <div class="form__group admin-filter__group">
+                <label class="form__label" for="filter-status">Статус</label>
+                <select class="form__select" id="filter-status" name="status">
+                    <option value="">Все статусы</option>
+                    <option value="new">Новая</option>
+                    <option value="work">В работе</option>
+                    <option value="done">Готово</option>
+                    <option value="cancel">Отменена</option>
+                </select>
+            </div>
+            <button class="button" type="submit">Показать</button>
+        </form>
         <div class="table-wrap">
             <table class="table">
                 <thead>
@@ -35,32 +50,165 @@
                         <th>Дата</th>
                         <th>Время</th>
                         <th>Статус</th>
+                        <th>Смена статуса</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1001</td><td>Иван Иванов</td><td>+7(903)-111-22-33</td><td>Toyota Camry</td><td>2018</td><td>Замена масла</td><td>28.10.2026</td><td>10:00</td>
+                        <td>1001</td>
+                        <td>Иван Иванов</td>
+                        <td>+7(903)-111-22-33</td>
+                        <td>Toyota Camry</td>
+                        <td>2018</td>
+                        <td>Замена масла</td>
+                        <td>28.10.2026</td>
+                        <td>10:00</td>
                         <td><span class="status status--new">Новая</span></td>
+                        <td>
+                            <form class="table__form" method="post" action="">
+                                <label class="table__label" for="status-1001">Статус</label>
+                                <select class="form__select table__select" id="status-1001" name="status-1001">
+                                    <option value="new">Новая</option>
+                                    <option value="work">В работе</option>
+                                    <option value="done">Готово</option>
+                                    <option value="cancel">Отменена</option>
+                                </select>
+                                <label class="table__label" for="cancel-1001">Причина отмены</label>
+                                <input class="form__input table__input" type="text" id="cancel-1001" name="cancel-1001"
+                                    placeholder="Если отменяем">
+                                <button class="button table__button" type="submit">Сохранить</button>
+                            </form>
+                        </td>
                     </tr>
                     <tr>
-                        <td>1002</td><td>Петр Смирнов</td><td>+7(916)-222-33-44</td><td>Kia Rio</td><td>2016</td><td>Диагностика</td><td>27.10.2026</td><td>12:30</td>
+                        <td>1002</td>
+                        <td>Петр Смирнов</td>
+                        <td>+7(916)-222-33-44</td>
+                        <td>Kia Rio</td>
+                        <td>2016</td>
+                        <td>Диагностика</td>
+                        <td>27.10.2026</td>
+                        <td>12:30</td>
                         <td><span class="status status--work">В работе</span></td>
+                        <td>
+                            <form class="table__form" method="post" action="">
+                                <label class="table__label" for="status-1002">Статус</label>
+                                <select class="form__select table__select" id="status-1002" name="status-1002">
+                                    <option value="new">Новая</option>
+                                    <option value="work">В работе</option>
+                                    <option value="done">Готово</option>
+                                    <option value="cancel">Отменена</option>
+                                </select>
+                                <label class="table__label" for="cancel-1002">Причина отмены</label>
+                                <input class="form__input table__input" type="text" id="cancel-1002" name="cancel-1002"
+                                    placeholder="Если отменяем">
+                                <button class="button table__button" type="submit">Сохранить</button>
+                            </form>
+                        </td>
                     </tr>
                     <tr>
-                        <td>1003</td><td>Ольга Кузнецова</td><td>+7(925)-333-44-55</td><td>Hyundai Solaris</td><td>2019</td><td>Шиномонтаж</td><td>20.10.2026</td><td>09:00</td>
+                        <td>1003</td>
+                        <td>Ольга Кузнецова</td>
+                        <td>+7(925)-333-44-55</td>
+                        <td>Hyundai Solaris</td>
+                        <td>2019</td>
+                        <td>Шиномонтаж</td>
+                        <td>20.10.2026</td>
+                        <td>09:00</td>
                         <td><span class="status status--done">Готово</span></td>
+                        <td>
+                            <form class="table__form" method="post" action="">
+                                <label class="table__label" for="status-1003">Статус</label>
+                                <select class="form__select table__select" id="status-1003" name="status-1003">
+                                    <option value="new">Новая</option>
+                                    <option value="work">В работе</option>
+                                    <option value="done">Готово</option>
+                                    <option value="cancel">Отменена</option>
+                                </select>
+                                <label class="table__label" for="cancel-1003">Причина отмены</label>
+                                <input class="form__input table__input" type="text" id="cancel-1003" name="cancel-1003"
+                                    placeholder="Если отменяем">
+                                <button class="button table__button" type="submit">Сохранить</button>
+                            </form>
+                        </td>
                     </tr>
                     <tr>
-                        <td>1004</td><td>Андрей Попов</td><td>+7(985)-444-55-66</td><td>Lada Vesta</td><td>2021</td><td>Ремонт ходовой</td><td>18.10.2026</td><td>14:00</td>
+                        <td>1004</td>
+                        <td>Андрей Попов</td>
+                        <td>+7(985)-444-55-66</td>
+                        <td>Lada Vesta</td>
+                        <td>2021</td>
+                        <td>Ремонт ходовой</td>
+                        <td>18.10.2026</td>
+                        <td>14:00</td>
                         <td><span class="status status--cancel">Отменена</span></td>
+                        <td>
+                            <form class="table__form" method="post" action="">
+                                <label class="table__label" for="status-1004">Статус</label>
+                                <select class="form__select table__select" id="status-1004" name="status-1004">
+                                    <option value="new">Новая</option>
+                                    <option value="work">В работе</option>
+                                    <option value="done">Готово</option>
+                                    <option value="cancel">Отменена</option>
+                                </select>
+                                <label class="table__label" for="cancel-1004">Причина отмены</label>
+                                <input class="form__input table__input" type="text" id="cancel-1004" name="cancel-1004"
+                                    placeholder="Если отменяем">
+                                <button class="button table__button" type="submit">Сохранить</button>
+                            </form>
+                        </td>
                     </tr>
                     <tr>
-                        <td>1005</td><td>Мария Соколова</td><td>+7(999)-555-66-77</td><td>Skoda Octavia</td><td>2017</td><td>Замена масла</td><td>31.10.2026</td><td>11:00</td>
+                        <td>1005</td>
+                        <td>Мария Соколова</td>
+                        <td>+7(999)-555-66-77</td>
+                        <td>Skoda Octavia</td>
+                        <td>2017</td>
+                        <td>Замена масла</td>
+                        <td>31.10.2026</td>
+                        <td>11:00</td>
                         <td><span class="status status--new">Новая</span></td>
+                        <td>
+                            <form class="table__form" method="post" action="">
+                                <label class="table__label" for="status-1001">Статус</label>
+                                <select class="form__select table__select" id="status-1005" name="status-1005">
+                                    <option value="new">Новая</option>
+                                    <option value="work">В работе</option>
+                                    <option value="done">Готово</option>
+                                    <option value="cancel">Отменена</option>
+                                </select>
+                                <label class="table__label" for="cancel-1005">Причина отмены</label>
+                                <input class="form__input table__input" type="text" id="cancel-1005" name="cancel-1005"
+                                    placeholder="Если отменяем">
+                                <button class="button table__button" type="submit">Сохранить</button>
+                            </form>
+                        </td>
                     </tr>
                     <tr>
-                        <td>1006</td><td>Дмитрий Волков</td><td>+7(903)-666-77-88</td><td>Renault Logan</td><td>2015</td><td>Диагностика</td><td>31.10.2026</td><td>16:00</td>
+                        <td>1006</td>
+                        <td>Дмитрий Волков</td>
+                        <td>+7(903)-666-77-88</td>
+                        <td>Renault Logan</td>
+                        <td>2015</td>
+                        <td>Диагностика</td>
+                        <td>31.10.2026</td>
+                        <td>16:00</td>
                         <td><span class="status status--work">В работе</span></td>
+                        <td>
+                            <form class="table__form" method="post" action="">
+                                <label class="table__label" for="status-1001">Статус</label>
+                                <select class="form__select table__select" id="status-1006" name="status-1006">
+                                    <option value="new">Новая</option>
+                                    <option value="work">В работе</option>
+                                    <option value="done">Готово</option>
+                                    <option value="cancel">Отменена</option>
+                                </select>
+                                <label class="table__label" for="cancel-1006">Причина отмены</label>
+                                <input class="form__input table__input" type="text" id="cancel-1006" name="cancel-1006"
+                                    placeholder="Если отменяем">
+                                <button class="button table__button" type="submit">Сохранить</button>
+                            </form>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -73,4 +221,5 @@
         <p class="footer__year">© 2026 Гаечный Ключ</p>
     </footer>
 </body>
+
 </html>
