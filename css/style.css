@@ -1,0 +1,255 @@
+:root {
+    --color-main: #1f2937;
+    --color-accent: #f97316;
+    --color-text: #1c2230;
+    --color-bg: #f3f4f6;
+    --color-muted: #6b7280;
+    --color-border: #e5e7eb;
+}
+
+/* Общее */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-title {
+    font-size: 32px;
+    color: var(--color-main);
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.section-title {
+    font-size: 30px;
+    color: var(--color-main);
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/* Шапка */
+
+.header {
+    background-color: var(--color-main);
+    border-bottom: 3px solid var(--color-accent);
+    padding: 16px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.header__link {
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.header__link:hover {
+    color: #ffffff;
+    background-color: #374151;
+}
+
+.header__link--active {
+    color: #ffffff;
+    background-color: var(--color-accent);
+}
+
+/* Подвал */
+
+.footer {
+    background-color: var(--color-main);
+    color: #d1d5db;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer__name {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer__text {
+    margin-bottom: 8px;
+}
+
+.footer__year {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+/* Кнопки */
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--color-accent);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #ea580c;
+}
+
+.button--wide {
+    width: 100%;
+}
+
+.button--outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.button--outline:hover {
+    background-color: #ffffff;
+    color: var(--color-main);
+}
+
+/* Формы */
+
+.form {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form__label {
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--color-main);
+}
+
+.form__input,
+.form__select,
+.form__textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #ffffff;
+}
+
+.form__input:focus,
+.form__select:focus,
+.form__textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.form__textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form__hint {
+    font-size: 13px;
+    color: var(--color-muted);
+}
+
+.form__error {
+    font-size: 14px;
+    font-weight: bold;
+    color: #dc2626;
+}
+
+.form__link {
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-muted);
+}
+
+.form__link a {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+/* Статусы */
+
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.status--new {
+    background-color: #2563eb;
+}
+
+.status--work {
+    background-color: #d97706;
+}
+
+.status--done {
+    background-color: #16a34a;
+}
+
+.status--cancel {
+    background-color: #dc2626;
+}
